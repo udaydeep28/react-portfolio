@@ -1,0 +1,32 @@
+.container3 {
+  /* background-color: #282828; */
+  border-radius: 10%;
+  height: auto;
+  margin-bottom: 10vh;
+  /* border: 2px solid #fbeccd; */
+}
+
+.grid > div {
+  grid-row: var(--r);
+  grid-column: var(--c);
+}
+.skills-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: red;
+  text-align: center;
+  margin: 8vh;
+}
+@media (max-width: 750px) {
+  .container3 {
+    border-radius: 10%;
+  }
+  .grid > div {
+    grid-row: var(--mobile-r);
+    grid-column: var(--mobile-c);
+  }
+  .grid > div img {
+    width: 62px;
+    height: 62px;
+  }
+}

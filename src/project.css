@@ -1,0 +1,9 @@
+.project {
+  height: auto;
+  margin-bottom: 10vh;
+}
+@media (max-width: 750px) {
+  span {
+    font-size: 1.2rem;
+  }
+}

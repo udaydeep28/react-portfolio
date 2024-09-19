@@ -1,0 +1,154 @@
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 10%;
+  line-height: 1.2;
+}
+
+.container1 .left {
+  padding: 30px;
+  font-size: 3.5rem;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+span.Typewriter__wrapper {
+  color: red;
+  font-size: 2rem;
+}
+
+.container1 .left .red {
+  color: red;
+}
+
+.container1 .left .small,
+.container1 .left #element {
+  font-size: 2rem;
+}
+
+.container1 .left #element {
+  color: red;
+}
+
+.container1 .right img {
+  border-radius: 50%;
+  width: 350px;
+  border: 6px solid #fbeccd;
+}
+
+.icon-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 8vh;
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 14px;
+  border-radius: 20px;
+  background-color: #fbeccd;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.icon-box i,
+.icon-box span {
+  color: red;
+}
+
+.icon-box i {
+  font-size: 20px;
+}
+
+.icon-box span {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.icon-box:hover {
+  transform: scale(1.05);
+  background-color: red;
+}
+
+.icon-box:hover i,
+.icon-box:hover span {
+  color: #fbeccd;
+}
+
+@media (max-width: 1150px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .container1 {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .container1 .left {
+    align-items: center;
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+  .container1 .right img {
+    margin-top: 30px;
+    margin-right: 0;
+    width: 250px;
+    height: auto;
+  }
+  span {
+    font-size: 2rem;
+    line-height: 2;
+  }
+  .container1 .left .small {
+    font-size: 1.5rem;
+  }
+  .icon-container {
+    margin-top: 2vh;
+  }
+}
+
+@media (max-width: 750px) {
+  span.Typewriter__wrapper {
+    font-size: 1.8rem;
+  }
+  .icon-container {
+    margin-top: 5vh;
+  }
+  .icon-box {
+    padding: 8px 10px;
+  }
+  .container1 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container1 .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+  }
+
+  .container1 .left {
+    align-items: center;
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+
+  .container1 .right img {
+    margin-top: 0px;
+    margin-bottom: 35px;
+    width: 200px;
+    height: auto;
+  }
+}
